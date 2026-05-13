@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.todo-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+
+h3 {
+  color: #2d3436;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 12px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0984e3;
+}
+
+.add-button {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-button:hover {
+  background-color: #009475;
+}
+
+/* Display List Styling */
+.displayToDo {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 12px;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: #ff7675;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.delete-button:hover {
+  opacity: 0.8;
+}
